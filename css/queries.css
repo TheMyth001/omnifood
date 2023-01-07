@@ -102,6 +102,7 @@
 
   .btn-mobile-nav {
     display: block;
+    z-index: 10;
   }
   .main-nav {
     background-color: rgba(255, 255, 255, 0.9);
@@ -236,5 +237,48 @@
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .hero-image {
+    width: 80%;
+  }
+  .logos img {
+    height: 1.4rem;
+  }
+  .step-image-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-image-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .step-image-box {
+    transform: translateY(2.4rem);
+  }
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-image-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
   }
 }
