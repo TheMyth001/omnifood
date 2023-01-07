@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omnifood</title>
+    <meta
+      name="description"
+      content="Omnifood is an AI powered food subscription that will make you eat healthy again, 365 days per year."
+    />
+    <title>Omnifood: Never cook again!</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -21,6 +28,11 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
     <script defer src="js/script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+    "
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -29,11 +41,13 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -53,10 +67,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--emph margin-right-small"
+            <a href="#cta" class="btn btn--emph margin-right-small"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--deemph">Learn more &darr;</a>
+            <a href="#how" class="btn btn--deemph">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-images">
                 <img src="img/customers/customer-1.jpg" alt="customer image" />
@@ -113,7 +127,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="middle-container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -176,7 +190,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="middle-container center-text">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
@@ -330,7 +344,7 @@
           <a href="#" class="link">See all recipes &rarr;</a>
         </div>
       </section>
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials">
           <span class="subheading">testimonials</span>
           <h2 class="heading-secondary">Once you try it, you cant go back!</h2>
@@ -460,7 +474,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="middle-container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -587,7 +601,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="middle-container">
           <div class="cta">
             <div class="cta-text-box">
@@ -647,17 +661,21 @@
           </a>
           <ul class="social-links">
             <li>
-              <a class="footer-link social-icon" href="#"
+              <a
+                class="footer-link social-icon"
+                href="https://www.instagram.com/"
                 ><ion-icon name="logo-instagram"></ion-icon
               ></a>
             </li>
             <li>
-              <a class="footer-link social-icon" href="#"
+              <a
+                class="footer-link social-icon"
+                href="https://www.facebook.com/"
                 ><ion-icon name="logo-facebook"></ion-icon
               ></a>
             </li>
             <li>
-              <a class="footer-link social-icon" href="#"
+              <a class="footer-link social-icon" href="https://twitter.com/"
                 ><ion-icon name="logo-twitter"></ion-icon
               ></a>
             </li>
